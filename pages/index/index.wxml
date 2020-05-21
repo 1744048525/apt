@@ -1,0 +1,47 @@
+<view class="apt">
+  <!-- 搜索框开始 -->
+    <view class="apt-search-input">
+      <view class="apt-search-input-content">
+        搜索
+      </view>
+    </view>
+  <!-- 搜索框结束 -->
+  <!-- 轮播图开始 -->
+    <view class="apt-swiper">
+      <swiper
+        indicator-dots="{{true}}"
+        indicator-color="black"
+        indicator-active-color="white"
+        autoplay="{{true}}"
+        interval="{{2000}}"
+        circular="{{true}}"
+      >
+      <!-- 循环遍历js文件中的轮播图数据 -->
+      <!-- 设置wx:key="goods_id"可用于提高检索效率,使用goods_id作为key值是因为该属性唯一 -->
+        <swiper-item wx:for="{{swiper_list}}" wx:key="goods_id">
+          <!-- item.image_src代表数组每一项数据下的image_src属性,即图片的位置 -->
+          <image src="{{item.image_src}}"></image>
+        </swiper-item>
+      </swiper>
+    </view>
+  <!-- 轮播图结束 -->
+  <!-- 导航栏开始 -->
+    <view class="apt-nav">
+      <view class="apt-nav-item" wx:for="{{catItems}}" wx:key="index">
+        <image src="{{item.image_src}}"></image>
+      </view>
+    </view>
+  <!-- 导航栏结束 -->
+  <!-- 底部图层开始 -->
+    <view class="apt-floor">
+      <view class="apt-floor-item" wx:for="{{floorData}}" wx:key="index">
+        <view class="apt-floor-item-title">{{item.floor_title.name}}</view>
+        <view class="apt-floor-item-list">
+          <view class="apt-floor-item-list-img" wx:for="{{item.product_list}}" wx:for-item="product" wx:for-index="i" wx:key="i">
+            <image src="{{product.image_src}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  <!-- 底部图层结束 -->
+</view>

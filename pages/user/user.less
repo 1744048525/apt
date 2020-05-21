@@ -1,0 +1,100 @@
+.apt-user {
+    background-color: #f9f9f9;
+    /*登录页面开始*/
+    .apt-uesr-login {
+        height: 400rpx;
+        position: relative;
+        .apt-user-bgI {
+            height: 100%;
+            /*滤镜效果*/
+            filter:blur(50rpx);
+            image {
+                
+            }
+        }
+        /*用户头像开始*/
+        .apt-user-headImage {
+            width: 150rpx;
+            height: 150rpx;
+            position: absolute;
+            top: 100rpx;
+            left: 50%;
+            transform: translate(-50%);
+            image {
+                border-radius: 50%;
+            }
+        }
+        /*用户头像结束*/
+        /*用户昵称开始*/
+        .nickName {
+            position: absolute;
+            top: 280rpx;
+            left: 50%;
+            transform: translate(-50%);
+            color: white;
+        }
+        /*用户昵称结束*/
+        /*登录按钮开始*/
+        button {
+            border: 1rpx solid red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: var(--themeColor);
+        }
+        /*登录按钮结束*/
+    }
+    /*登录页面结束*/
+    /*用户功能界面开始*/
+    .apt-user-fun {
+        margin-top: 10rpx;
+        display: flex;
+        align-items: center;
+        .apt-user-fun-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .iconfont{
+                font-size: 50rpx;
+            }
+            .apt-user-fun-item-font {
+                font-size: 30rpx;
+            }
+        }
+    }
+    /*用户功能界面结束*/
+    /*系统功能区开始*/
+    .apt-user-sysfun {
+        .apt-user-sysfun-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20rpx;
+            height: 100rpx;
+            border-bottom: 1rpx solid #ccc;
+            .left{
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                .iconfont{
+                    color: #434343;
+                    font-size: 50rpx;
+                }
+                .apt-user-sysfun-text {
+                    margin-left: 20rpx;
+                    color: #434343;
+                    font-size: 30rpx;
+                }
+            }
+            .right{
+                .apt-user-sysfun-tab {
+                    color: #ccc;
+                    font-size: 30rpx;
+                }
+            }   
+        }
+    }
+    /*系统功能区结束*/
+}

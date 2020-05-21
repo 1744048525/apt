@@ -1,0 +1,114 @@
+<!-- 用户页面 -->
+<view class="apt-user">
+<!-- 用户登录开始 -->
+  <view class="apt-uesr-login">
+  <!-- 内部逻辑,如果数据中含有用户登录信息,则获取用户的个人信息,并渲染用户登录的页面,如果数据中不含有用户的登录信息,则表示用户未登录,则渲染未登录的页面 -->
+  <!-- block标签不会在页面中做任何渲染，只接受控制属性。 -->
+  <!-- !!的作用是将该数据的数据类型强转为Boolean类型 -->
+  <!-- 如果wx:if内的条件成立,则执行该标签内部的代码 -->
+    <block wx:if="{{!!userInfo.nickName}}">
+      <!-- 背景图片 -->
+      <view class="apt-user-bgI">
+        <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <!-- 用户头像 -->
+      <view class="apt-user-headImage">
+        <image src="{{userInfo.avatarUrl}}"></image>
+      </view>
+      <!-- 用户昵称 -->
+      <view class="nickName">
+        {{userInfo.nickName}}
+      </view>
+    </block>
+    <!-- 否则执行下面的代码 -->
+    <block wx:else>
+    <!-- open-type:微信开放属性 -->
+    <!-- open-type="getUserInfo"获取用户信息，可以从bindgetuserinfo回调中获取到用户信息 -->
+      <button 
+      open-type="getUserInfo"
+      bindgetuserinfo="getUserInfo"
+      >登录</button>
+    </block>
+  </view>
+<!-- 用户登录结束 -->
+<!-- 订单功能区开始 -->
+  <view class="apt-user-fun">
+    <!-- 每一项 -->
+    <view class="apt-user-fun-item">
+      <!-- 字体图标 -->
+        <view class="iconfont icon-icon-test"></view>
+      <!-- 文字描述 -->
+      <view class="apt-user-fun-item-font">待收款</view>
+    </view>
+    <!-- 每一项 -->
+    <view class="apt-user-fun-item">
+      <!-- 字体图标 -->
+        <view class="iconfont icon-daishouhuo"></view>
+      <!-- 文字描述 -->
+      <view class="apt-user-fun-item-font">待收货</view>
+    </view>
+    <!-- 每一项 -->
+    <view class="apt-user-fun-item">
+      <!-- 字体图标 -->
+        <view class="iconfont icon-tuikuan"></view>
+      <!-- 文字描述 -->
+      <view class="apt-user-fun-item-font">退货/退款</view>
+    </view>
+    <!-- 每一项 -->
+    <view class="apt-user-fun-item">
+      <!-- 字体图标 -->
+        <view class="iconfont icon-quanbudingdan"></view>
+      <!-- 文字描述 -->
+      <view class="apt-user-fun-item-font">全部订单</view>
+    </view>
+  </view>
+<!-- 订单功能区结束 -->
+<!-- 系统功能区开始 -->
+  <view class="apt-user-sysfun">
+    <!-- 每一项 -->
+    <view class="apt-user-sysfun-item">
+      <view class="left">
+        <!-- 图标 -->
+        <view class="iconfont icon-lianxikefu"></view>
+        <!-- 文字 -->
+        <view class="apt-user-sysfun-text">
+          联系客服
+        </view>
+      </view>
+      <view class="right">
+        <!-- 详情 -->
+        <view class="apt-user-sysfun-tab">400-618-4000</view>
+      </view>  
+    </view>
+    <!-- 每一项 -->
+    <view class="apt-user-sysfun-item">
+      <view class="left">
+        <!-- 图标 -->
+        <view class="iconfont icon-yijianfankui"></view>
+        <!-- 文字 -->
+        <view class="apt-user-sysfun-text">
+          意见反馈
+        </view>
+      </view>
+      <view class="right">
+        <!-- 详情 -->
+      </view>  
+    </view>
+    <!-- 每一项 -->
+    <view class="apt-user-sysfun-item">
+      <view class="left">
+        <!-- 图标 -->
+        <view class="iconfont icon-ziyuan"></view>
+        <!-- 文字 -->
+        <view class="apt-user-sysfun-text">
+          当前版本
+        </view>
+      </view>
+      <view class="right">
+        <!-- 详情 -->
+        <view class="apt-user-sysfun-tab">v4.1.1</view>
+      </view>  
+    </view>
+  </view>
+<!-- 系统功能区结束 -->
+</view>

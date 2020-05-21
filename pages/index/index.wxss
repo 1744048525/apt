@@ -1,0 +1,52 @@
+.apt {
+  /*搜索框开始*/
+  /*搜索框结束*/
+  /*导航栏开始*/
+  /*导航栏结束*/
+  /*底部栏开始*/
+  /*底部栏结束*/
+}
+.apt .apt-search-input {
+  height: 100rpx;
+  background-color: var(--themeColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.apt .apt-search-input .apt-search-input-content {
+  background-color: white;
+  height: 80rpx;
+  border-radius: 5rpx;
+  color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  color: #767676;
+}
+.apt .apt-nav {
+  height: 150rpx;
+  display: flex;
+}
+.apt .apt-nav .apt-nav-item {
+  flex: 1;
+}
+.apt .apt-floor .apt-floor-item {
+  /*文字标题开始*/
+  /*文字标题结束*/
+  /*图片列表开始*/
+  /*图片列表结束*/
+}
+.apt .apt-floor .apt-floor-item .apt-floor-item-title {
+  color: pink;
+  margin-left: 10rpx;
+}
+.apt .apt-floor .apt-floor-item .apt-floor-item-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.apt .apt-floor .apt-floor-item .apt-floor-item-list .apt-floor-item-list-img {
+  width: 33.333%;
+  height: 188rpx;
+  padding: 10rpx;
+}

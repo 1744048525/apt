@@ -1,0 +1,93 @@
+.apt-user {
+  background-color: #f9f9f9;
+  /*登录页面开始*/
+  /*登录页面结束*/
+  /*用户功能界面开始*/
+  /*用户功能界面结束*/
+  /*系统功能区开始*/
+  /*系统功能区结束*/
+}
+.apt-user .apt-uesr-login {
+  height: 400rpx;
+  position: relative;
+  /*用户头像开始*/
+  /*用户头像结束*/
+  /*用户昵称开始*/
+  /*用户昵称结束*/
+  /*登录按钮开始*/
+  /*登录按钮结束*/
+}
+.apt-user .apt-uesr-login .apt-user-bgI {
+  height: 100%;
+  /*滤镜效果*/
+  filter: blur(50rpx);
+}
+.apt-user .apt-uesr-login .apt-user-headImage {
+  width: 150rpx;
+  height: 150rpx;
+  position: absolute;
+  top: 100rpx;
+  left: 50%;
+  transform: translate(-50%);
+}
+.apt-user .apt-uesr-login .apt-user-headImage image {
+  border-radius: 50%;
+}
+.apt-user .apt-uesr-login .nickName {
+  position: absolute;
+  top: 280rpx;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+}
+.apt-user .apt-uesr-login button {
+  border: 1rpx solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--themeColor);
+}
+.apt-user .apt-user-fun {
+  margin-top: 10rpx;
+  display: flex;
+  align-items: center;
+}
+.apt-user .apt-user-fun .apt-user-fun-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.apt-user .apt-user-fun .apt-user-fun-item .iconfont {
+  font-size: 50rpx;
+}
+.apt-user .apt-user-fun .apt-user-fun-item .apt-user-fun-item-font {
+  font-size: 30rpx;
+}
+.apt-user .apt-user-sysfun .apt-user-sysfun-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.apt-user .apt-user-sysfun .apt-user-sysfun-item .left {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.apt-user .apt-user-sysfun .apt-user-sysfun-item .left .iconfont {
+  color: #434343;
+  font-size: 50rpx;
+}
+.apt-user .apt-user-sysfun .apt-user-sysfun-item .left .apt-user-sysfun-text {
+  margin-left: 20rpx;
+  color: #434343;
+  font-size: 30rpx;
+}
+.apt-user .apt-user-sysfun .apt-user-sysfun-item .right .apt-user-sysfun-tab {
+  color: #ccc;
+  font-size: 30rpx;
+}
